@@ -11,7 +11,7 @@ const Sidebar = () => {
   };
 
   return (
-      <div className={styles.sidebar_container}>
+      <div className={`${styles.sidebar_container} ${openSidebar ? styles.z_index : null} `}>
         <div className={styles.hamburger_logo_container}>
         <Link onClick={(e) => setOpenSidebar(prev => {prev ? !prev : prev})} smooth={true} to="main" className={styles.sidebar_links}><p className={styles.logo}>MR</p></Link>
           <button

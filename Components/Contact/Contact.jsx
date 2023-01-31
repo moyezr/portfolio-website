@@ -44,7 +44,7 @@ const Contact = () => {
 
   return (
     <div id="contact" className={styles.contact_container}>
-      <h2 className={styles.contact_heading}>Let's Get In Touch</h2>
+      <h2 className={styles.contact_heading}>Let&apos;s Get In Touch</h2>
       <SocialIcons styles={styles} />
       <form className={styles.form}>
         <input type="email" className={styles.form_input} onChange={e => setEmail(e.target.value)} name="email" placeholder="Your Email" />

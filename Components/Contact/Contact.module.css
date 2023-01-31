@@ -5,7 +5,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 .contact_heading {
@@ -30,6 +29,10 @@
     outline: none;
     font-size: 1.2rem;
     padding: 0 1rem 0.5rem;
+    border-bottom: 1px solid rgb(122, 122, 122);
+}
+
+.form_input:focus {
     border-bottom: 1px solid white;
 }
 
@@ -42,11 +45,15 @@
     font-size: 1.2rem;
     font-family: inherit;
     background: transparent;
-    border: 1px solid white;
+    border: 1px solid rgb(122, 122, 122);
     padding: 0.5rem 1rem 0.5rem;
     width: 100%;
     border-radius: 20px;
     height: 40%;
+}
+
+.form_txt_area:focus {
+    border: 1px solid white;
 }
 
 .submit_btn {
@@ -99,12 +106,15 @@
 
 
 @media screen and (max-width: 768px) {
+
+    
     .contact_heading {
         font-size: 1.5rem;
     }
 
     .form {
         width: 80%;
+        z-index: 100;
     }
 
     .form_input {
@@ -126,9 +136,11 @@
     }
 
     .social_icon {
+        position: relative;
         font-size: 1.8rem;
         cursor: pointer;
         transition: all 0.2s;
+
     }
 }
 

@@ -15,7 +15,7 @@ export default function Home() {
     if(window.innerWidth <= 768) {
       setOpenImage(false)
     }
-  })
+  }, [])
   return (
     <div className={styles.global_container}>
       <Head>
