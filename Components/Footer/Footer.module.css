@@ -1,0 +1,17 @@
+.footer_container {
+    width: 100vw;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    color: rgb(185, 185, 185);
+    text-align: center;
+}
+
+.footer_container span {
+    display: block;
+    color: white;
+    padding: 1rem 0rem;
+    margin: 0 auto;
+}

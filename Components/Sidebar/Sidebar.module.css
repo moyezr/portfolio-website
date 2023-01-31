@@ -1,0 +1,123 @@
+/* .sidebar_container {
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  top: 0;
+} */
+
+.sidebar_container {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 10vh 80vh;
+vertical-align: center;
+z-index: 1000000;
+    overflow: hidden;
+}
+
+.hamburger_logo_container {
+    padding: 1rem 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+
+    font-family: "Zen Dots", cursive;
+    font-size: 2rem;
+    backdrop-filter: brightnes(125%);
+    background-image: linear-gradient(
+      to right,
+      rgb(79, 88, 255),
+      rgb(246, 113, 255)
+    );
+    /* background-image: linear-gradient(to right,rgb(255, 174, 0), rgb(255, 251, 0)); */
+    filter: drop-shadow(6px 6px 9px rgba(0, 0, 0, 0.7));
+    -webkit-background-clip: text;
+   
+}
+.hamburger {
+
+    display: block;
+
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+    appearance: none;
+    background: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.3s;
+    margin-top: -18px;
+    z-index: 100;
+  }
+
+  .hamburger .bar,
+  .hamburger::after,
+  .hamburger::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0px;
+    transition: all 0.3s;
+  }
+
+  .is_active::before {
+    transform: rotate(-45deg) translate(-8px, 7px);
+  }
+
+  .is_active .bar {
+    opacity: 0;
+  }
+
+  .is_active::after {
+    transform: rotate(45deg) translate(-9px, -8px);
+  }
+
+  .open_sidebar {
+    transform:none;
+}
+
+.close_sidebar {
+    transform: translateX(25rem);
+}
+
+
+.sidebar_links_container {
+    background-color: rgb(10, 155, 245);
+    position: relative;
+    width: 90%;
+    /* transform: translateX(26rem); */
+    border-radius: 20px;
+    list-style: none;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    z-index: 1000 !important;
+    transition: transform 0.2s;
+}
+
+.sidebar_links {
+  z-index: 10000;
+    margin-bottom: 1rem;
+}
+
+.social_links_container {
+    display: flex;
+    margin-top: 5rem;
+    width: 100%;
+    padding: 0 2rem;
+    justify-content: space-evenly;
+}
+
+.sidebar_social_links {
+
+}
