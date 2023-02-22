@@ -108,6 +108,11 @@ vertical-align: center;
     margin-bottom: 1rem;
 }
 
+.resume_link {
+  z-index: 10000;
+  margin-bottom: 1rem;
+}
+
 .social_links_container {
     display: flex;
     margin-top: 5rem;

@@ -35,17 +35,24 @@
     border-radius: 20px;
     width: 250px;
     height: 150px;
+    transition: all 0.2s;
 }
 
 .skills_img {
     width: auto;
     height: 100px;
+    transition: all 0.2s;
 
 }
 
 .skill_name {
     font-size: 1rem;
     padding-top: 1rem;
+    transition: all 0.2s;
+}
+
+.skill_card:hover, .skills_img:hover, .skill_name:hover {
+    transform: scale(1.1);
 }
 
 #invert_effect {

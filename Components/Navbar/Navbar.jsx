@@ -29,6 +29,7 @@ const Navbar = () => {
         <Link offset={-80} smooth={true} to="projects" className={Styles.navbar_link}>Projects</Link>
         <Link offset={-60} smooth={true} to="skills" className={Styles.navbar_link}>Skills</Link>
         <Link smooth={true} to="about" className={Styles.navbar_link}>About</Link>
+        <a className={Styles.resume_link} download="myResume.pdf" href="/myResume.pdf" >My Resume</a>
         <Link offset={-45} smooth={true} to="contact" className={`${Styles.contact_btn}`}>Contact Me</Link>
       </ul>
     </nav>

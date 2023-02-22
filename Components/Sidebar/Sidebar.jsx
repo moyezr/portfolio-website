@@ -31,6 +31,7 @@ const Sidebar = () => {
           <Link onClick={toggleMenu} smooth={true} offset={-50} to="projects" className={styles.sidebar_links}>Projects</Link>
           <Link onClick={toggleMenu} smooth={true} offset={-20} to="skills" className={styles.sidebar_links}>Skills</Link>
           <Link onClick={toggleMenu} smooth={true} offset={20} to="about" className={styles.sidebar_links}>About</Link>
+          <a className={styles.resume_link} download="myResume.pdf" href="/myResume.pdf" >My Resume</a>
           <Link onClick={toggleMenu} smooth={true} to="contact" className={styles.sidebar_links}>Contact Me</Link>
           <SocialIcons styles={styles} />
         </nav>

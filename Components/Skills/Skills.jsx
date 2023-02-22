@@ -8,7 +8,7 @@ const Skills = () => {
         <div className={styles.skills_cards_container}>
             {skills.map((el, i) => {
                 return (
-                    <div className={styles.skill_card} key={i+1}>
+                    <div data-aos={`${i%2==0 ? "flip-right": "flip-left" }`} className={styles.skill_card} key={i+1}>
                         <Image alt={el.name} id={el.name=="Next.js" || el.name=="Solidity" ? styles.invert_effect : null} className={styles.skills_img} src={el.url} width={200} height={100} />
                         <p className={styles.skill_name}>{el.name}</p>
                     </div>

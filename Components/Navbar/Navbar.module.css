@@ -3,16 +3,13 @@
         font-family: "Zen Dots", cursive;
         font-size: 4vw;
         backdrop-filter: brightnes(125%);
-        background-image: linear-gradient(
-          to right,
-          rgb(79, 88, 255),
-          rgb(246, 113, 255)
-        );
+        background-image: var(--blue-gradient);
         /* background-image: linear-gradient(to right,rgb(255, 174, 0), rgb(255, 251, 0)); */
         filter: drop-shadow(6px 6px 9px rgba(0, 0, 0, 0.7));
         margin-top: 1rem;
         cursor: pointer;
         -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
        
 }
 
@@ -41,6 +38,25 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.resume_link {
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  border: 1px solid white;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.resume_link:hover {
+  background: var(--orange-yellow-gradient);
+  color: black;
+}
+
 
 .navbar_link {
     margin: 0 1rem;
