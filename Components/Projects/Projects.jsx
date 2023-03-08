@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./Projects.module.css";
 
-import { nftMarketplace, uniswapClone, todoDapp, aiMints, dex } from "../../public/img";
+import { nftMarketplace, uniswapClone, todoDapp, aiMints, dex, dao } from "../../public/img";
 import Link from "next/link";
 
 const Projects = () => {
@@ -18,6 +18,10 @@ const Projects = () => {
     {
       name: "Todo Dapp",
       img: todoDapp
+    },
+    {
+      name: "DeDevs DAO",
+      img: dao
     }
   ]
 
@@ -39,6 +43,12 @@ const Projects = () => {
       img: dex,
       codeLink:"https://github.com/moyezr/dex",
       websiteLink: "https://dex-uniswap-clone-fymg433pf-moyezrabbaniwork-gmailcom.vercel.app",
+    },
+    {
+      name: "DeDevs DAO",
+      img: dao,
+      codeLink: "https://github.com/moyezr/DAO",
+      websiteLink: "dedevs-7ehpli3e0-moyezrabbaniwork-gmailcom.vercel.app"
     }
   ]
 
