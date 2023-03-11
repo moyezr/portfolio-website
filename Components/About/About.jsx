@@ -5,8 +5,8 @@ const About = () => {
   return (
     <div id="about" className={styles.about_container}>
       <h2 className={styles.about_heading}>About Me</h2>
-      <div className={styles.about_sub_container}>
-      <div data-aos="fade-right" className={styles.about_txt_container}>
+      <div data-aos="zoom-in"  className={styles.about_sub_container}>
+      <div className={styles.about_txt_container}>
         <p className={styles.about_para}>
           I am Moyez Rabbani, developer & keen enthusiast in Web 3.0. I can
           build Decentralized Applications that interact with blockchain using
@@ -22,7 +22,7 @@ const About = () => {
         </p>
         </div>
 
-      <Image data-aos="zoom-in" className={styles.my_img} src={myImage} width={400} height={400} alt="My Image" />
+      <Image className={styles.my_img} src={myImage} width={400} height={400} alt="My Image" />
       </div>
     </div>
   );
