@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 import Styles from "./Navbar.module.css";
 import Sidebar from "../Sidebar/Sidebar";
 import {Link} from "react-scroll";
@@ -27,6 +26,7 @@ const Navbar = () => {
       <Link smooth={true} to="main"><p className={Styles.logo}>MR</p></Link>
       <ul className={Styles.navbar_links_container}>
         <Link offset={-80} smooth={true} to="projects" className={Styles.navbar_link}>Projects</Link>
+        <a href="https://moyez.hashnode.dev/" target="_blank" className={Styles.navbar_link}>Blogs</a>
         <Link offset={-60} smooth={true} to="skills" className={Styles.navbar_link}>Skills</Link>
         <Link smooth={true} to="about" className={Styles.navbar_link}>About</Link>
         <a className={Styles.resume_link} download="myResume.pdf" href="/myResume.pdf" >My Resume</a>
